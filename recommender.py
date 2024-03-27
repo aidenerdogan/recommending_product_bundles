@@ -7,11 +7,6 @@ except Exception as e:
     print("Error loading data:", e)
 
 
-
-
-
-
-
 # Function to get bundle for a product ID
 def get_bundle(product_id, associations,frequent_itemsets_fp, unit_prices, num_products=5):
     if product_id in associations["basket"].apply(list).explode().values:
